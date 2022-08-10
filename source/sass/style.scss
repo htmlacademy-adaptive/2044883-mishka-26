@@ -1,1 +1,48 @@
-// Начните писать стили здесь
+@use "./blocks/page__body.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/intro.scss";
+@use "./blocks/intro-button.scss";
+@use "./blocks/main-product.scss";
+@use "./blocks/button.scss";
+@use "./blocks/about.scss";
+@use "./blocks/about-list.scss";
+@use "./blocks/review.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/address.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/social.scss";
+@use "./blocks/copyright.scss";
+
+@use "./blocks/catalog-header.scss";
+@use "./blocks/catalog-nav.scss";
+@use "./blocks/products.scss";
+@use "./blocks/title.scss";
+@use "./blocks/product.scss";
+@use "./blocks/production.scss";
+@use "./blocks/video-button.scss";
+@use "./blocks/catalog-footer.scss";
+
+@use "./blocks/form-header.scss";
+@use "./blocks/form-nav.scss";
+@use "./blocks/form-content.scss";
+@use "./blocks/form.scss";
+@use "./blocks/form-footer.scss";
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+       url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

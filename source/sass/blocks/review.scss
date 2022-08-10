@@ -1,0 +1,49 @@
+.review {
+  position: relative;
+  padding: 0 50px 90px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50px;
+    height: 34px;
+    width: 100%;
+    background-image: url("../../img/zigzag-line-desktop.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.review__wrapper {
+  padding: 78px 0 96px 175px;
+  background-image: url("../../img/review.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 350px 457px;
+}
+
+.review__title {
+  font-size: 53px;
+  line-height: 57px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.review__item {
+  margin: 0;
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 44px;
+  font-size: 17px;
+  line-height: 30px;
+  color: #444444;
+  text-shadow: -1px 0 rgba(255, 255, 255, 0.75), 0 1px rgba(255, 255, 255, 0.75), 1px 0 rgba(255, 255, 255, 0.75), 0 -1px rgba(255, 255, 255, 0.75);
+}
+
+.review__author {
+  font-style: normal;
+  font-size: 17px;
+  line-height: 30px;
+}
