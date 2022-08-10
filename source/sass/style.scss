@@ -13,7 +13,7 @@
 @use "./blocks/main-footer.scss";
 @use "./blocks/social.scss";
 @use "./blocks/copyright.scss";
-
+//
 @use "./blocks/catalog-header.scss";
 @use "./blocks/catalog-nav.scss";
 @use "./blocks/products.scss";
@@ -22,7 +22,7 @@
 @use "./blocks/production.scss";
 @use "./blocks/video-button.scss";
 @use "./blocks/catalog-footer.scss";
-
+//
 @use "./blocks/form-header.scss";
 @use "./blocks/form-nav.scss";
 @use "./blocks/form-content.scss";
@@ -31,8 +31,7 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2"),
-       url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -40,8 +39,7 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff2") format("woff2"),
-       url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;

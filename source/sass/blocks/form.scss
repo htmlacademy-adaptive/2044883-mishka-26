@@ -8,7 +8,7 @@
   font-weight: 700;
   line-height: 16px;
   text-align: center;
-  color: #63D1BB;
+  color: #63d1bb;
   text-transform: uppercase;
 }
 
@@ -18,14 +18,14 @@
   list-style-type: none;
 }
 
-.form__item, .form__label {
+.form__item,
+.form__label {
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
 }
 
 .form__field {
-
   &::placeholder {
     font-size: 19px;
     line-height: 18px;
