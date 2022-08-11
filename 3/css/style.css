@@ -160,6 +160,15 @@
   background-color: #ffffff;
   border: 2px solid #444444;
 }
+.button--secondary {
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #63d1bb;
+  border: none;
+}
 
 .about {
   padding: 68px 50px 90px;
@@ -300,11 +309,6 @@
   list-style-type: none;
 }
 
-.site-list__item-link {
-  text-decoration: none;
-  color: #000000;
-}
-
 .products__wrapper {
   padding: 110px 50px 0 50px;
 }
@@ -418,11 +422,6 @@
   list-style-type: none;
 }
 
-.site-list__item-link {
-  text-decoration: none;
-  color: #000000;
-}
-
 .form-content__wrapper {
   padding: 98px 0 50px;
 }
@@ -486,6 +485,40 @@
 .form-footer {
   padding: 51px 50px 58px;
   background-color: #f1f1f1;
+}
+
+.modal__wrapper {
+  width: 566px;
+  margin: auto;
+  padding: 38px 108px 46px;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 30px;
+  line-height: 57px;
+  text-align: center;
+}
+
+.modal-form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.modal-form__title {
+  margin: 0 auto 19px;
+  padding: 0;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 @font-face {
