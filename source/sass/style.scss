@@ -1,6 +1,7 @@
 @use "./blocks/page__body.scss";
 @use "./blocks/main-header.scss";
 @use "./blocks/main-nav.scss";
+@use "./blocks/site-list.scss";
 @use "./blocks/intro.scss";
 @use "./blocks/intro-button.scss";
 @use "./blocks/main-product.scss";
@@ -28,6 +29,9 @@
 @use "./blocks/form-content.scss";
 @use "./blocks/form.scss";
 @use "./blocks/form-footer.scss";
+//
+@use "./blocks/modal.scss";
+@use "./blocks/modal-form.scss";
 
 @font-face {
   font-family: "Open Sans";
