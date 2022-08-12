@@ -1,0 +1,23 @@
+.title {
+  position: relative;
+  padding: 102px 0 113px;
+  background-color: #f1f1f1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 34px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: url("../../img/zigzag-fill-desktop.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.title__text {
+  text-align: center;
+  font-size: 53px;
+  line-height: 57px;
+  margin: 0;
+}

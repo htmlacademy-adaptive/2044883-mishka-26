@@ -1,0 +1,49 @@
+.form__group {
+  border: none;
+}
+
+.form__name {
+  padding: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form__item,
+.form__label {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.form__field {
+  &::placeholder {
+    font-size: 19px;
+    line-height: 18px;
+    opacity: 0.3;
+  }
+}
+
+.form__textarea {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 18px;
+  color: lighten($color: #000000, $amount: 30%);
+}
+
+.form__warning {
+  margin: 0;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: right;
+  color: #444444;
+}

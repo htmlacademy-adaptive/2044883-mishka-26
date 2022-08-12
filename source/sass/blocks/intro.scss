@@ -1,0 +1,25 @@
+.intro {
+  position: relative;
+  padding: 20px 50px 17px;
+  background-image: url("../../img/hero-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 34px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: url("../../img/zigzag-fill-desktop.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.intro__title {
+  font-size: 53px;
+  text-align: center;
+  line-height: 57px;
+  margin: 158px 175px 355px;
+}

@@ -1,0 +1,15 @@
+.intro-button {
+  min-height: 119px;
+  border: none;
+  color: #ffffff;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: #63d1bb;
+
+
+  &--secondary {
+    background-color: #56c3b2;
+  }
+}
