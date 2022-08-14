@@ -1,3 +1,9 @@
+.site-list {
+  @media (min-width: 768px) {
+    order: 2;
+  }
+}
+
 .site-list__item-link {
   text-decoration: none;
   color: #000000;
