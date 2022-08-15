@@ -1,7 +1,11 @@
+@use "./blocks/global.scss";
+//
 @use "./blocks/page.scss";
 @use "./blocks/main-header.scss";
 @use "./blocks/main-nav.scss";
 @use "./blocks/site-list.scss";
+@use "./blocks/user-list.scss";
+@use "./blocks/event-list.scss";
 @use "./blocks/intro.scss";
 @use "./blocks/intro-button.scss";
 @use "./blocks/main-product.scss";
@@ -21,6 +25,7 @@
 @use "./blocks/title.scss";
 @use "./blocks/product.scss";
 @use "./blocks/production.scss";
+@use "./blocks/video.scss";
 @use "./blocks/video-button.scss";
 @use "./blocks/catalog-footer.scss";
 //
@@ -32,9 +37,6 @@
 //
 @use "./blocks/modal.scss";
 @use "./blocks/modal-form.scss";
-//
-@use "./blocks/variables.scss";
-@use "./blocks/global.scss";
 
 @font-face {
   font-family: "Open Sans";

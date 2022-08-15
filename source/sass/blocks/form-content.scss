@@ -1,11 +1,29 @@
 .form-content__wrapper {
-  padding: 98px 0 50px;
+  padding: 17px 30px 55px;
+
+  @media (min-width: 768px) {
+    padding: 54px 50px 50px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 98px 97px 50px;
+  }
 }
 
 .form-content__description {
   margin: 0;
-  margin-bottom: 63px;
-  font-size: 17px;
-  line-height: 30px;
+  margin-bottom: 29px;
+  font-size: 13px;
+  line-height: 24px;
   color: #444444;
+
+  @media (min-width: 768px) {
+    margin-bottom: 63px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-left: 128px;
+  }
 }

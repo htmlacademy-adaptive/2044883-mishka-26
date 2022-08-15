@@ -4,7 +4,7 @@
   padding-top: 14px;
   padding-bottom: 14px;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
@@ -22,5 +22,9 @@
     color: #ffffff;
     background-color: #63d1bb;
     border: none;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 17px;
   }
 }

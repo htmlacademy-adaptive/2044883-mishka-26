@@ -8,6 +8,19 @@
   list-style-type: none;
 }
 
+.main-nav__toggle {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
 .main-nav__delivery {
   display: none;
+  font-size: 15px;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    order: 3;
+    display: block;
+  }
 }

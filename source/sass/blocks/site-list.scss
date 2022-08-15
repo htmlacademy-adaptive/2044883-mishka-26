@@ -1,6 +1,9 @@
 .site-list {
+  margin: 0;
+
   @media (min-width: 768px) {
     order: 2;
+    font-size: 15px;
   }
 }
 
