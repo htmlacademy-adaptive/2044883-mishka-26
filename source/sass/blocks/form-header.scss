@@ -16,8 +16,13 @@
 .form-header__logo {
   display: inline-block;
   height: 79px;
+  cursor: default;
 
   @media (min-width: 768px) {
     height: 89px;
+  }
+
+  @media (min-width: 1150px) {
+    display: none;
   }
 }

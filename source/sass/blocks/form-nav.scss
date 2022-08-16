@@ -3,12 +3,23 @@
   flex-direction: column;
 }
 
+.form-nav__logo {
+  order: 1;
+  display: none;
+
+  @media (min-width: 1150px) {
+    display: block;
+  }
+}
+
 .form-nav__list {
   padding: 0;
   list-style-type: none;
 }
 
 .form-nav__toggle {
+  width: fit-content;
+
   @media (min-width: 768px) {
     display: none;
   }
