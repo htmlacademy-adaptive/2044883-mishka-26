@@ -1,6 +1,12 @@
 .catalog-nav__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .catalog-nav__logo {
