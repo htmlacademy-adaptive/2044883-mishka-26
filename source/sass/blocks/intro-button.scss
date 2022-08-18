@@ -1,15 +1,30 @@
 .intro-button {
-  min-height: 119px;
+  display: flex;
+  min-height: 103px;
+  padding: 21px 36px 21px 30px;
   border: none;
   color: #ffffff;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 24px;
   background-color: #63d1bb;
 
 
   &--secondary {
     background-color: #56c3b2;
   }
+
+  @media (min-width: 768px) {
+    min-height: 119px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.intro-button__text {
+  display: flex;
+  align-self: center;
+  text-align: start;
+  width: 130px;
 }

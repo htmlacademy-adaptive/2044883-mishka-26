@@ -1,4 +1,43 @@
+.form-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form-nav__logo {
+  order: 1;
+  display: none;
+
+  @media (min-width: 1150px) {
+    display: block;
+  }
+}
+
 .form-nav__list {
   padding: 0;
   list-style-type: none;
+}
+
+.form-nav__toggle {
+  width: fit-content;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.form-nav__delivery {
+  display: none;
+  font-size: 15px;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    order: 3;
+    display: block;
+  }
 }

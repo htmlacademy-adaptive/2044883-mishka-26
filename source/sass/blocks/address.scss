@@ -1,12 +1,16 @@
 .address {
   font-style: normal;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 30px;
   color: #444444;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
 }
 
 .address__email {
-  padding-bottom: 8px;
+  padding-bottom: 2px;
   text-decoration: none;
   color: #444444;
   box-shadow: 0 1px 0 0 #62d1ba;

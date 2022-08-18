@@ -2,10 +2,25 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: 768px) {
+    margin: 98px 0 82px;
+  }
+
+  @media (min-width: 1150px) {
+    margin: 95px 0 90px;
+  }
 }
 
 .about-list__item {
-  font-size: 20px;
-  line-height: 22px;
+  margin-top: 83px;
+  font-size: 17px;
+  line-height: 20px;
   font-weight: 700;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
