@@ -7,11 +7,12 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 6px;
+    height: 7px;
     width: 320px;
     background-image: url("../img/zigzag-line-desktop.svg");
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: 320px;
+    background-position: top;
   }
 
   @media (min-width: 768px) {
@@ -78,6 +79,7 @@
 
 .review__item {
   margin: 0;
+  margin-bottom: 30px;
 
   @media (min-width: 768px) {
     order: 3;
@@ -103,7 +105,19 @@
   line-height: 30px;
 }
 
+.review__button-wrapper {
+  display: flex;
+  margin-bottom: 38px;
+}
+
 .review__slider-button {
+  width: 130px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
   @media (min-width: 768px) {
     order: 4;
   }

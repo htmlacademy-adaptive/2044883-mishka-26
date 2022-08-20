@@ -8,7 +8,15 @@
   }
 }
 
+// .site-list__item {
+
+// }
+
 .site-list__item-link {
+  display: flex;
+  align-items: center;
+  height: 79px;
+  padding-left: 76px;
   text-decoration: none;
   color: #000000;
 }

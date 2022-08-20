@@ -1,9 +1,17 @@
 .copyright {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
 }
 
 .copyright__text {
   font-size: 19px;
   line-height: 18px;
   margin: 0;
+  margin-right: 29px;
+}
+
+.copyright__link {
+  display: flex;
 }

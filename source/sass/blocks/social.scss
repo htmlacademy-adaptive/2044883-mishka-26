@@ -1,6 +1,28 @@
+.social {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .social__list {
   display: flex;
+  justify-content: center;
   margin: 0;
+  margin-bottom: 28px;
   padding: 0;
   list-style-type: none;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  min-height: 27px;
+
+  &:not(:last-child) {
+    margin-right: 29px;
+  }
+}
+
+.social__link {
+  display: flex;
 }

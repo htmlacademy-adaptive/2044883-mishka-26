@@ -7,9 +7,32 @@
   }
 }
 
+.user-list__item {
+  position: relative;
+}
+
 .user-list__item-link {
+  display: flex;
+  align-items: center;
+  height: 79px;
+  padding-left: 76px;
   text-decoration: none;
   color: #000000;
+}
+
+.user-list__icon {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.user-list__search-icon {
+  left: 32px;
+}
+
+.user-list__cart-icon {
+  left: 30px;
 }
 
 .user-list__item-text {

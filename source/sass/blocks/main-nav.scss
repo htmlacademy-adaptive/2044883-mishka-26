@@ -1,11 +1,23 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__wrapper {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: #ffffff;
 
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  &--close {
+    display: none;
   }
 }
 
@@ -24,7 +36,15 @@
 }
 
 .main-nav__toggle {
-  width: fit-content;
+  position: absolute;
+  top: -50px;
+  right: 30px;
+  width: 21px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
 
   @media (min-width: 768px) {
     display: none;
