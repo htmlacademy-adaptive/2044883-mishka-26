@@ -3,19 +3,20 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 256px;
+  min-height: 177px;
   background-color: #f1f1f1;
 
   @media (min-width: 768px) {
     align-items: flex-start;
     min-height: 226px;
+    margin-top: -44px;
 
     &::before {
       content: "";
       position: absolute;
       height: 24px;
       width: 768px;
-      bottom: -2px;
+      bottom: -10px;
       left: 0;
       background-image: url("../img/zigzag-fill-desktop.svg");
       background-repeat: repeat;

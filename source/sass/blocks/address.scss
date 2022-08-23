@@ -8,6 +8,8 @@
   color: #444444;
 
   @media (min-width: 768px) {
+    grid-template-columns: 81px 250px 82px 257px;
+    gap: 25px 0;
     font-size: 17px;
   }
 }
@@ -21,6 +23,12 @@
   text-decoration: none;
   color: #444444;
   box-shadow: 0 1px 0 0 #62d1ba;
+
+  @media (min-width: 768px) {
+    box-shadow: none;
+    border-bottom: 1px solid #62d1ba;
+    height: 30px;
+  }
 }
 
 .address__text {

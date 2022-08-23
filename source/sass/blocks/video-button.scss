@@ -1,5 +1,21 @@
 .video-button {
+  position: absolute;
+  width: 100px;
+  height: 77px;
   border: none;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    width: 102px;
+    height: 78px;
+  }
+
+  img {
+    @media (min-width: 768px) {
+      width: 102px;
+      height: 78px;
+    }
+  }
 }

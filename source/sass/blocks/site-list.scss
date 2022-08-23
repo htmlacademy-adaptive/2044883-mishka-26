@@ -3,14 +3,12 @@
 
   @media (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    width: 350px;
     order: 2;
     font-size: 15px;
   }
 }
-
-// .site-list__item {
-
-// }
 
 .site-list__item-link {
   display: flex;
@@ -19,4 +17,11 @@
   padding-left: 76px;
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: 768px) {
+    width: 167px;
+    height: auto;
+    padding: 0;
+    padding-top: 20px;
+  }
 }

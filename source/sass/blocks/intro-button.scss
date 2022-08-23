@@ -12,16 +12,21 @@
   line-height: 24px;
   background-color: #63d1bb;
 
+  @media (min-width: 768px) {
+    min-height: 119px;
+    padding: 25px 36px 34px 36px;
+    width: 50%;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &--secondary {
     padding-right: 27px;
     background-color: #56c3b2;
-  }
 
-  @media (min-width: 768px) {
-    min-height: 119px;
-    font-size: 20px;
-    line-height: 30px;
+    @media (min-width: 768px) {
+      padding-right: 33px;
+    }
   }
 }
 
