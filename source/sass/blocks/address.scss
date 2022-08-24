@@ -12,6 +12,10 @@
     gap: 25px 0;
     font-size: 17px;
   }
+
+  @media (min-width: 1150px) {
+    grid-template-columns: 82px 249px;
+  }
 }
 
 .address__subtitle {

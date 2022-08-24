@@ -5,6 +5,10 @@
     display: flex;
     order: 1;
   }
+
+  @media (min-width: 1150px) {
+    order: 2;
+  }
 }
 
 .user-list__item {

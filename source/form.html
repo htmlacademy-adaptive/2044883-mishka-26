@@ -14,10 +14,11 @@
       <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин Mishka">
     </a>
     <nav class="form-nav">
-      <button class="form-nav__toggle menu-button menu-button--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="form-nav__wrapper">
+      <button class="form-nav__toggle menu-button menu-button--close menu-button--hide" type="button"><span
+          class="visually-hidden">Открыть меню</span></button>
+      <div class="form-nav__wrapper form-nav__wrapper--nojs">
         <ul class="form-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--border">
             <a class="site-list__item-link" href="catalog.html">
               Каталог товаров
             </a>
@@ -157,36 +158,39 @@
             <legend class="form__name form__name--name">ФИО</legend>
             <div class="form__group-content">
               <label class="form__label" for="field-name">Имя:</label>
-              <input class="form__field" id="field-name" type="text" name="field-name" placeholder="Введите ваше имя*" autocomplete="off">
+              <input class="form__field" id="field-name" type="text" name="field-name" placeholder="Введите ваше имя*"
+                autocomplete="off">
             </div>
             <div class="form__group-content">
               <label class="form__label" for="field-surname">Фамилия:</label>
               <input class="form__field" id="field-surname" type="text" name="field-surname"
-              placeholder="Укажите фамилию*" autocomplete="off">
+                placeholder="Укажите фамилию*" autocomplete="off">
             </div>
             <div class="form__group-content">
               <label class="form__label" for="field-patronymic">Отчество:</label>
               <input class="form__field" id="field-patronymic" type="text" name="field-patronymic"
-              placeholder="Отчество, если желаете" autocomplete="off">
+                placeholder="Отчество, если желаете" autocomplete="off">
             </div>
           </fieldset>
 
           <fieldset class="form__group form__group-phone form__group--secondary">
             <legend class="visually-hidden">Тел</legend>
             <label class="form__name form__name--phone" for="field-phone">Тел</label>
-            <input class="form__field" id="field-phone" type="text" name="field-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" autocomplete="off">
+            <input class="form__field" id="field-phone" type="text" name="field-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+              autocomplete="off">
           </fieldset>
 
           <fieldset class="form__group form__group-email form__group--secondary">
             <legend class="visually-hidden">E-mail</legend>
             <label class="form__name form__name--email" for="field-email">E-mail</label>
-            <input class="form__field" id="field-email" type="text" name="field-email" placeholder="Ваш Email*" autocomplete="off">
+            <input class="form__field" id="field-email" type="text" name="field-email" placeholder="Ваш Email*"
+              autocomplete="off">
           </fieldset>
 
           <fieldset class="form__group form__group-additionally">
             <legend class="form__name form__name--additionally">Доп</legend>
             <label class="visually-hidden" for="field-textarea">Доп</label>
-            <textarea class="form__textarea" id="field-textarea" name="field-textarea" type="textarea"
+            <textarea class="form__textarea" id="field-textarea" name="field-textarea"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
 
@@ -249,7 +253,7 @@
       <div class="form-footer__copyright copyright">
         <h2 class="copyright__text">Разработано</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.754.044h-.1L.21 1.444v24.7l13.445 8 13.346-8v-24.7L13.754.044Zm11.354 12.1-11.454-6.8v-.1h-.1l-.099-.1v.1l-11.354 6.9v-9l11.454-1.2 11.553 1.2v9Zm-11.553-5.3 11.453 6.7-4.482 2.6-7.07-4.2v1.4l5.875 3.5-.896.5-4.98-3v1.4l3.785 2.3-.797.5-2.988-1.8v1.4l1.892 1.1-1.792 1.1-11.354-6.7 11.354-6.8ZM2.1 15.144l11.354 6.8v1l-7.868-4.7v1.4l7.968 4.8v1.1l-7.968-4.7v1.4l7.968 4.8 8.067-4.9v-5.2l3.386-2v10l-11.453 6.9-11.454-6.8v-9.9Z"
               fill="#63D1BB" />

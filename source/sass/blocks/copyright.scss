@@ -14,6 +14,14 @@
   line-height: 18px;
   margin: 0;
   margin-right: 29px;
+
+  @media (min-width: 768px) {
+    margin-right: 26px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-right: 28px;
+  }
 }
 
 .copyright__link {

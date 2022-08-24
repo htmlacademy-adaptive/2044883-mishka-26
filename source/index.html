@@ -14,10 +14,11 @@
       <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин Mishka">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle menu-button menu-button--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
+      <button class="main-nav__toggle menu-button menu-button--close menu-button--hide" type="button"><span
+          class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper main-nav__wrapper--nojs">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--border">
             <a class="site-list__item-link" href="catalog.html">
               Каталог товаров
             </a>
@@ -120,7 +121,8 @@
             <dt class="main-product__term">Высота:</dt>
             <dd class="main-product__definition">15 см</dd>
           </dl>
-          <img class="main-product__image" src="img/triple-set-desktop.jpg" width="525" height="636" alt="Вязаные корзинки">
+          <img class="main-product__image" src="img/triple-set-desktop.jpg" width="525" height="636"
+            alt="Вязаные корзинки">
           <p class="main-product__price">Цена: 990 руб.</p>
           <button class="main-product__button button" type="button">Заказать</button>
         </div>
@@ -165,13 +167,13 @@
             <button class="review__slider-button prev-button">
               <span class="visually-hidden">Назад</span>
               <svg width="50" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z" fill="#000"/>
+                <path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z" fill="#000" />
               </svg>
             </button>
             <button class="review__slider-button next-button">
               <span class="visually-hidden">Вперед</span>
               <svg width="50" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 11h42.3l-8.1-8.2L37 0l13 13-13 13-2.8-2.8 8.1-8.2H0v-4Z" fill="#000"/>
+                <path d="M0 11h42.3l-8.1-8.2L37 0l13 13-13 13-2.8-2.8 8.1-8.2H0v-4Z" fill="#000" />
               </svg>
             </button>
           </div>
@@ -189,7 +191,10 @@
           <p class="address__subtitle">адрес:</p>
           <p class="address__text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
         </address>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6515070400582!2d30.322740046430855!3d59.938679300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca18e1d7%3A0xe1b646f62fb95e7a!2sMISHKA!5e0!3m2!1sru!2sru!4v1661000919808!5m2!1sru!2sru" width="527" height="457" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Карта"></iframe>
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6515070400582!2d30.322740046430855!3d59.938679300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca18e1d7%3A0xe1b646f62fb95e7a!2sMISHKA!5e0!3m2!1sru!2sru!4v1661000919808!5m2!1sru!2sru"
+          width="527" height="457" style="border: 0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
         <a class="contacts__link button" href="form.html">Напишите нам</a>
       </div>
     </section>
@@ -270,13 +275,13 @@
             </li>
             <li class="modal-form__item">
               <label class="modal-form__label">
-                <input class="modal-form__input visually-hidden" type="radio" name="product-size" value="m" checked>
+                <input class="modal-form__input visually-hidden" type="radio" name="product-size" value="m">
                 <span class="modal-form__mark">M</span>
               </label>
             </li>
             <li class="modal-form__item">
               <label class="modal-form__label">
-                <input class="modal-form__input visually-hidden" type="radio" name="product-size" value="l" checked>
+                <input class="modal-form__input visually-hidden" type="radio" name="product-size" value="l">
                 <span class="modal-form__mark">L</span>
               </label>
             </li>

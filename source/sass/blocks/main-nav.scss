@@ -15,6 +15,10 @@
   width: 100%;
   background-color: #ffffff;
 
+  &--nojs {
+    position: initial;
+  }
+
   @media (min-width: 768px) {
     display: flex;
     box-sizing: border-box;
@@ -61,7 +65,13 @@
   }
 
   @media (min-width: 1150px) {
-    display: block;
+    order: 1;
+    margin-left: 10px;
+
+    &::after {
+      width: 711px;
+      left: -60px;
+    }
   }
 }
 
@@ -73,7 +83,7 @@
 .main-nav__toggle {
   position: absolute;
   top: -55px;
-  right: 21px;
+  right: 26px;
   width: 30px;
   height: 30px;
   padding: 0;
