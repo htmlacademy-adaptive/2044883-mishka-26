@@ -16,24 +16,24 @@
       background-color: #f1f1f1;
     }
 
-    &-color {
+    &--color {
       margin-top: 26px;
       padding: 50px 50px 50px 217px;
     }
 
-    &-name {
+    &--name {
       padding: 50px 50px 26px 217px;
     }
 
-    &-phone {
+    &--phone {
       padding: 50px 50px 0 217px;
     }
 
-    &-email {
+    &--email {
       padding: 24px 50px 50px 217px;
     }
 
-    &-additionally {
+    &--additionally {
       padding: 50px 50px 53px 217px;
     }
   }
@@ -41,23 +41,23 @@
   @media (min-width: 1150px) {
     padding: 0 100px 0 225px;
 
-    &-color {
+    &--color {
       padding: 50px 100px 50px 225px;
     }
 
-    &-name {
+    &--name {
       padding: 50px 225px 26px 225px;
     }
 
-    &-phone {
+    &--phone {
       padding: 50px 225px 0 225px;
     }
 
-    &-email {
+    &--email {
       padding: 24px 225px 50px 225px;
     }
 
-    &-additionally {
+    &--additionally {
       padding: 50px 225px 49px 225px;
     }
   }
@@ -151,19 +151,20 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
 
-  &-color {
-    @media (min-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(2, 239px);
-      gap: 24px 23px;
-    }
+.form__list-color {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 239px);
+    gap: 24px 23px;
+  }
 
-    @media (min-width: 1150px) {
-      grid-template-columns: repeat(3, 239px);
-    }
+  @media (min-width: 1150px) {
+    grid-template-columns: repeat(3, 239px);
   }
 }
+
 
 .form__item,
 .form__label {

@@ -48,11 +48,6 @@
     margin-top: 22px;
     margin-right: auto;
 
-    & img {
-      width: 113px;
-      height: 46px;
-    }
-
     &::after {
       content: "";
       position: absolute;
@@ -65,13 +60,14 @@
   }
 
   @media (min-width: 1150px) {
-    order: 1;
-    margin-left: 10px;
+    display: block;
+  }
+}
 
-    &::after {
-      width: 711px;
-      left: -60px;
-    }
+.main-nav__logo img {
+  @media (min-width: 768px) {
+    width: 113px;
+    height: 46px;
   }
 }
 
@@ -89,6 +85,7 @@
   padding: 0;
   border: none;
   cursor: pointer;
+
 
   @media (min-width: 768px) {
     display: none;

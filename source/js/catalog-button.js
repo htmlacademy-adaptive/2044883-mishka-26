@@ -1,5 +1,5 @@
-let mainCatalogButton = document.querySelector('.catalog-nav__toggle');
-let menu = document.querySelector('.catalog-nav__wrapper');
+const mainCatalogButton = document.querySelector('.catalog-nav__toggle');
+const menu = document.querySelector('.catalog-nav__wrapper');
 
 mainCatalogButton.classList.remove('menu-button--hide');
 menu.classList.remove('catalog-nav__wrapper--nojs');

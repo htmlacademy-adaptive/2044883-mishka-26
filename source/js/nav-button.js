@@ -1,5 +1,5 @@
-let mainNavButton = document.querySelector('.main-nav__toggle');
-let menu = document.querySelector('.main-nav__wrapper');
+const mainNavButton = document.querySelector('.main-nav__toggle');
+const menu = document.querySelector('.main-nav__wrapper');
 
 mainNavButton.classList.remove('menu-button--hide');
 menu.classList.remove('main-nav__wrapper--nojs');

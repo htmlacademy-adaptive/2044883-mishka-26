@@ -48,11 +48,6 @@
     margin-top: 22px;
     margin-right: auto;
 
-    & img {
-      width: 113px;
-      height: 46px;
-    }
-
     &::after {
       content: "";
       position: absolute;
@@ -66,6 +61,13 @@
 
   @media (min-width: 1150px) {
     display: block;
+  }
+}
+
+.form-nav__logo img {
+  @media (min-width: 768px) {
+    width: 113px;
+    height: 46px;
   }
 }
 
