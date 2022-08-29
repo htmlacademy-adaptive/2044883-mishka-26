@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: 768px) {
+    padding: 0 15px;
+  }
 }
 
 .modal-form__title {
@@ -18,12 +22,48 @@
 }
 
 .modal-form__list {
-  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 82px);
+  gap: 0 7px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 112px);
+  }
 }
 
 .modal-form__item {
   margin-bottom: 31px;
+}
+
+
+.modal-form__input:checked + .modal-form__mark {
+  border-color: #63d1bb;
+}
+
+.modal-form__mark {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #444444;
+
+  @media (min-width: 768px) {
+    width: 112px;
+  }
+}
+
+.modal-form__button {
+  @media (min-width: 768px) {
+    width: 350px;
+  }
 }

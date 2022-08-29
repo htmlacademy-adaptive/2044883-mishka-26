@@ -7,19 +7,26 @@
 
   @media (min-width: 768px) {
     flex-direction: row;
+    min-height: 89px;
   }
 }
 
 .catalog-header__logo {
   display: inline-block;
   height: 79px;
-  cursor: default;
+  cursor: pointer;
 
   @media (min-width: 768px) {
+    display: none;
     height: 89px;
   }
 
   @media (min-width: 1150px) {
     display: none;
+  }
+
+  img {
+    display: block;
+    margin: 22px auto 0;
   }
 }

@@ -12,4 +12,11 @@
 .event-list__item-link {
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: 1150px) {
+    display: block;
+    width: 185px;
+    padding-top: 19px;
+    margin-right: 35px;
+  }
 }

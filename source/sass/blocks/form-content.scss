@@ -2,11 +2,11 @@
   padding: 17px 30px 55px;
 
   @media (min-width: 768px) {
-    padding: 54px 50px 50px;
+    padding: 64px 0 50px;
   }
 
   @media (min-width: 1150px) {
-    padding: 98px 97px 50px;
+    padding: 115px 0 50px;
   }
 }
 
@@ -19,11 +19,12 @@
 
   @media (min-width: 768px) {
     margin-bottom: 63px;
+    padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: 1150px) {
-    margin-left: 128px;
+    padding: 0 225px;
   }
 }

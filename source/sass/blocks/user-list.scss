@@ -3,13 +3,50 @@
 
   @media (min-width: 768px) {
     display: flex;
-    order: 0;
+    order: 1;
+  }
+
+  @media (min-width: 1150px) {
+    order: 2;
+  }
+}
+
+.user-list__item {
+  position: relative;
+
+  @media (min-width: 768px) {
+    min-width: 82px;
   }
 }
 
 .user-list__item-link {
+  display: flex;
+  align-items: center;
+  height: 79px;
+  padding-left: 76px;
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: 768px) {
+    height: 89px;
+    padding-left: 81px;
+    border-left: 1px solid #e1e1e1;
+  }
+}
+
+.user-list__icon {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.user-list__search-icon {
+  left: 32px;
+}
+
+.user-list__cart-icon {
+  left: 30px;
 }
 
 .user-list__item-text {

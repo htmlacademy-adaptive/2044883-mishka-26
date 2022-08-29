@@ -1,0 +1,7 @@
+.prev-button {
+  border-right: none;
+
+  @media (min-width: 768px) {
+    margin-right: 37px;
+  }
+}

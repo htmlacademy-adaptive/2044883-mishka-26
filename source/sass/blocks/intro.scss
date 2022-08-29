@@ -3,18 +3,21 @@
   position: relative;
   background-image: url("../img/hero-desktop.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: auto 373px;
+  background-position: center -17px;
 
   @media (min-width: 768px) {
-    padding-top: 155px;
+    margin-top: -44px;
+    padding-top: 154px;
+    background-size: cover;
+    background-position: center;
 
     &::before {
       content: "";
       position: absolute;
       height: 24px;
       width: 768px;
-      bottom: -6px;
+      bottom: -12px;
       left: 0;
       background-image: url("../img/zigzag-fill-desktop.svg");
       background-repeat: no-repeat;
@@ -28,8 +31,17 @@
     &::before {
       height: 34px;
       width: 1150px;
+      bottom: -17px;
       background-size: 1150px;
     }
+  }
+}
+
+.intro__wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
   }
 }
 

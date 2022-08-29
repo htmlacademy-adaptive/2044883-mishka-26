@@ -1,17 +1,40 @@
 .address {
+  display: grid;
+  grid-template-columns: 78px 183px;
+  gap: 30px 0;
   font-style: normal;
   font-size: 14px;
   line-height: 30px;
   color: #444444;
 
   @media (min-width: 768px) {
+    grid-template-columns: 81px 250px 82px 257px;
+    gap: 25px 0;
     font-size: 17px;
+  }
+
+  @media (min-width: 1150px) {
+    grid-template-columns: 82px 249px;
   }
 }
 
+.address__subtitle {
+  margin: 0;
+}
+
 .address__email {
-  padding-bottom: 2px;
+  margin-right: auto;
   text-decoration: none;
   color: #444444;
   box-shadow: 0 1px 0 0 #62d1ba;
+
+  @media (min-width: 768px) {
+    box-shadow: none;
+    border-bottom: 1px solid #62d1ba;
+    height: 30px;
+  }
+}
+
+.address__text {
+  margin: 0;
 }
