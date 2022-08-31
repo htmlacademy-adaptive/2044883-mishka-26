@@ -107,6 +107,15 @@
   }
 }
 
+.main-product__section picture {
+  @media (min-width: 768px) {
+    display: inherit;
+    grid-row: 1 / 5;
+    grid-column: 2 / 3;
+  }
+}
+
+
 .main-product__description {
   margin: 0;
   margin-bottom: 28px;

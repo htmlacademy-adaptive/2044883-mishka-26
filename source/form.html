@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин Mishka</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -24,13 +28,16 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link" href="form.html">
+            <a class="site-list__item-link" href="#">
               Вязание на заказ
             </a>
           </li>
         </ul>
-        <a class="main-nav__logo" href="index.html">
-          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин Mishka">
+        <a class="form-nav__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <img src="img/mishka-logo-tablet.svg" width="113" height="46" alt="Магазин Mishka">
+          </picture>
         </a>
         <ul class="form-nav__list user-list">
           <li class="user-list__item">

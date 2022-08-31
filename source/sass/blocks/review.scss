@@ -48,6 +48,10 @@
     background-size: 350px 457px;
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/review@2x.jpg");
+  }
+
   @media (min-width: 1150px) {
     padding: 78px 0 96px 175px;
   }

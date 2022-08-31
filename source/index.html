@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин Mishka</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -31,7 +35,10 @@
         </ul>
 
         <a class="main-nav__logo" href="#">
-          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин Mishka">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <img src="img/mishka-logo-tablet.svg" width="113" height="46" alt="Магазин Mishka">
+          </picture>
         </a>
 
         <ul class="main-nav__list user-list">
@@ -121,8 +128,12 @@
             <dt class="main-product__term">Высота:</dt>
             <dd class="main-product__definition">15 см</dd>
           </dl>
-          <img class="main-product__image" src="img/triple-set-desktop.jpg" width="525" height="636"
-            alt="Вязаные корзинки">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="main-product__image" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315"
+              alt="Вязаные корзинки">
+          </picture>
           <p class="main-product__price">Цена: 990 руб.</p>
           <button class="main-product__button button" type="button">Заказать</button>
         </div>
