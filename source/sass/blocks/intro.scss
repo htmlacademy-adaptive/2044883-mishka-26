@@ -1,16 +1,27 @@
 .intro {
   padding-top: 73px;
   position: relative;
-  background-image: url("../img/hero-desktop.png");
+  background-image: url("../img/hero-mobile.png");
+  background-color: #e6e6e6;
+  color: #000000;
   background-repeat: no-repeat;
   background-size: auto 373px;
   background-position: center -17px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.png");
+  }
+
   @media (min-width: 768px) {
     margin-top: -44px;
     padding-top: 154px;
-    background-size: cover;
+    background-image: url("../img/hero-desktop.png");
+    background-size: 1150px auto;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.png");
+    }
 
     &::before {
       content: "";
@@ -27,6 +38,7 @@
 
   @media (min-width: 1150px) {
     padding-top: 158px;
+    background-position: 0 0;
 
     &::before {
       height: 34px;

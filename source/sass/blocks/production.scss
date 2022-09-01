@@ -28,6 +28,11 @@
   }
 }
 
+.production__wrapper picture {
+  display: inherit;
+  grid-row: 1 / 4;
+}
+
 .production__title {
   position: relative;
   margin: 0 0 26px 0;
