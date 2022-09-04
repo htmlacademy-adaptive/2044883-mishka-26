@@ -1,5 +1,5 @@
 .form-content__wrapper {
-  padding: 17px 30px 55px;
+  padding: 17px 0 55px;
 
   @media (min-width: 768px) {
     padding: 64px 0 50px;
@@ -11,13 +11,16 @@
 }
 
 .form-content__description {
-  margin: 0;
+  box-sizing: border-box;
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 29px;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
 
   @media (min-width: 768px) {
+    width: 768px;
     margin-bottom: 63px;
     padding: 0 50px;
     font-size: 17px;
@@ -25,6 +28,7 @@
   }
 
   @media (min-width: 1150px) {
+    width: 1150px;
     padding: 0 225px;
   }
 }

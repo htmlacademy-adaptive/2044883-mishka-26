@@ -3,7 +3,9 @@
 
   @media (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
     order: 1;
+    max-width: 350px;
   }
 
   @media (min-width: 1150px) {
@@ -13,9 +15,11 @@
 
 .user-list__item {
   position: relative;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   @media (min-width: 768px) {
     min-width: 82px;
+    box-shadow: none;
   }
 }
 
@@ -26,6 +30,17 @@
   padding-left: 76px;
   text-decoration: none;
   color: #000000;
+  fill: rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    color: #666666;
+    fill: #63d1bb;
+  }
+
+  &:active {
+    color: #b3b3b3;
+    fill: #d0f1eb;
+  }
 
   @media (min-width: 768px) {
     height: 89px;

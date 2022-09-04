@@ -30,12 +30,18 @@
 }
 
 .site-list__item {
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
+  @media (min-width: 768px) {
+    box-shadow: none;
+  }
+
   @media (min-width: 1150px) {
     display: flex;
     width: 184px;
     margin-right: 35px;
 
-    &--border {
+    &:nth-child(odd) {
       border-right: 1px solid #e1e1e1;
     }
   }
@@ -50,6 +56,14 @@
   text-decoration: none;
   color: #000000;
 
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
   @media (min-width: 768px) {
     width: 167px;
     height: auto;
@@ -58,6 +72,7 @@
   }
 
   @media (min-width: 1150px) {
+    margin: 10px 0;
     padding: 0;
   }
 }

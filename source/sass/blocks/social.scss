@@ -33,4 +33,12 @@
 
 .social__link {
   display: flex;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -41,6 +41,7 @@
 .main-nav__logo {
   order: 0;
   display: none;
+  cursor: default;
 
   @media (min-width: 768px) {
     position: relative;
@@ -69,10 +70,25 @@
   }
 }
 
-.main-nav__logo img {
+.main-nav__logo svg {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo-tablet {
   @media (min-width: 1150px) {
-    width: 149px;
-    height: 72px;
+    display: none;
+  }
+}
+
+.main-nav__logo-desktop {
+  @media (max-width: 1149px) {
+    display: none;
   }
 }
 

@@ -69,10 +69,25 @@
   }
 }
 
-.form-nav__logo img {
+.form-nav__logo svg {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-nav__logo-tablet {
   @media (min-width: 1150px) {
-    width: 149px;
-    height: 72px;
+    display: none;
+  }
+}
+
+.form-nav__logo-desktop {
+  @media (max-width: 1149px) {
+    display: none;
   }
 }
 

@@ -15,6 +15,17 @@
   background-color: #ffffff;
   border: 2px solid #444444;
   cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus-visible {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
 
   &--secondary {
     margin: 0 auto;
@@ -24,6 +35,17 @@
     color: #ffffff;
     background-color: #63d1bb;
     border: none;
+
+    &:hover {
+      padding: 16px;
+      color: #444444;
+      background-color: #ffffff;
+      border: 2px solid #444444;
+    }
+
+    &:active {
+      color: #7c7c7c;
+    }
   }
 
   @media (min-width: 768px) {

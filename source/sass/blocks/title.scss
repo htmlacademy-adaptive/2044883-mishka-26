@@ -15,12 +15,12 @@
       content: "";
       position: absolute;
       height: 24px;
-      width: 768px;
+      width: 100%;
       bottom: -10px;
       left: 0;
       background-image: url("../img/zigzag-fill-desktop.svg");
       background-repeat: repeat;
-      background-size: 768px;
+      background-size: 100%;
     }
   }
 
@@ -29,8 +29,6 @@
 
     &::before {
       height: 34px;
-      width: 1150px;
-      background-size: 1150px;
     }
   }
 }

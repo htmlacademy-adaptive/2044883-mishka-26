@@ -12,6 +12,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1150px) {
+    width: 950px;
   }
 }
 
@@ -20,5 +26,14 @@
 
   @media (min-width: 768px) {
     display: block;
+    height: 34px;
+  }
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -1,9 +1,9 @@
 .intro {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
   padding-top: 73px;
-  position: relative;
   background-image: url("../img/hero-mobile.png");
-  background-color: #e6e6e6;
-  color: #000000;
   background-repeat: no-repeat;
   background-size: auto 373px;
   background-position: center -17px;
@@ -13,7 +13,8 @@
   }
 
   @media (min-width: 768px) {
-    margin-top: -44px;
+    width: 768px;
+    margin-top: -45px;
     padding-top: 154px;
     background-image: url("../img/hero-desktop.png");
     background-size: 1150px auto;
@@ -22,38 +23,46 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.png");
     }
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 24px;
-      width: 768px;
-      bottom: -12px;
-      left: 0;
-      background-image: url("../img/zigzag-fill-desktop.svg");
-      background-repeat: no-repeat;
-      background-size: 768px;
-    }
   }
 
   @media (min-width: 1150px) {
+    width: 1150px;
     padding-top: 158px;
-    background-position: 0 0;
-
-    &::before {
-      height: 34px;
-      width: 1150px;
-      bottom: -17px;
-      background-size: 1150px;
-    }
   }
 }
 
 .intro__wrapper {
+  position: relative;
+  align-content: space-between;
+  min-height: 489px - 73px;
+
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    min-height: 746px - 154px;
     padding: 0 50px;
+
+    &::before {
+      z-index: 1;
+      content: "";
+      position: absolute;
+      height: 24px;
+      width: 100%;
+      bottom: -12px;
+      left: 0;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  @media (min-width: 1150px) {
+    min-height: 747px - 158px;
+
+    &::before {
+      height: 34px;
+      bottom: -17px;
+    }
   }
 }
 
@@ -69,13 +78,12 @@
     max-width: 668px;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 372px;
+    margin-bottom: 0;
   }
 
   @media (min-width: 1150px) {
     max-width: 700px;
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 355px;
   }
 }
