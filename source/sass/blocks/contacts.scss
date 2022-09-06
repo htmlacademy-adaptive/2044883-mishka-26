@@ -1,12 +1,17 @@
 .contacts {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
   padding: 38px 0 39px;
 
   @media (min-width: 768px) {
+    width: 768px;
     padding: 46px 0 57px;
   }
 
   @media (min-width: 1150px) {
-    padding: 70px 50px 106px 112px;
+    width: 1150px;
+    padding: 70px 50px 106px 224px;
   }
 }
 

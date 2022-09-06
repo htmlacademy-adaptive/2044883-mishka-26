@@ -1,11 +1,16 @@
 .about {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
   padding: 31px 30px 58px;
 
   @media (min-width: 768px) {
+    width: 768px;
     padding: 56px 50px 0;
   }
 
   @media (min-width: 1150px) {
+    width: 1150px;
     padding-top: 68px;
   }
 }

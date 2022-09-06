@@ -3,4 +3,14 @@
   border: none;
   background: none;
   cursor: pointer;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -13,6 +13,14 @@
   text-decoration: none;
   color: #000000;
 
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
   @media (min-width: 1150px) {
     display: block;
     width: 185px;

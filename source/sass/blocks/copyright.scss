@@ -26,4 +26,13 @@
 
 .copyright__link {
   display: flex;
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
