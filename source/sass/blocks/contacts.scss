@@ -15,7 +15,7 @@
     padding: 70px 50px 106px 224px;
   }
 
-  &:after {
+  &::after {
     @media (min-width: 768px) {
       content: "";
       position: absolute;
