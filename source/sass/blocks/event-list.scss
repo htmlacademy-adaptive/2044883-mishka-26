@@ -5,7 +5,9 @@
 
   @media (min-width: 1150px) {
     display: flex;
+    flex-wrap: wrap;
     order: 3;
+    width: 440px;
   }
 }
 
