@@ -10,11 +10,35 @@
 }
 
 .form__group {
+  position: relative;
   box-sizing: border-box;
   width: 260px;
   margin: 0 auto;
   padding: 0;
   border: none;
+
+  //&--email::after,
+  //&--phone::after {
+  //  position: absolute;
+  //  content: "";
+  //  right: 0;
+  //  background-repeat: no-repeat;
+  //  z-index: -1;
+  //}
+  //
+  //&--email::after {
+  //  width: 32px;
+  //  height: 21px;
+  //  bottom: 40px;
+  //  background-image: url("../img/mail.svg");
+  //}
+  //
+  //&--phone::after {
+  //  width: 25px;
+  //  height: 24px;
+  //  bottom: 42px;
+  //  background-image: url("../img/phone.svg");
+  //}
 
   @media (min-width: 768px) {
     width: 768px;
@@ -81,6 +105,19 @@
   color: #63d1bb;
   text-transform: uppercase;
 
+  @media (max-width: 767px) {
+    &::before {
+      position: absolute;
+      content: "";
+      margin-top: 8px;
+      margin-right: 30px;
+      width: 200px;
+      height: 1px;
+      right: -30px;
+      background-color: #62d1ba;
+    }
+  }
+
   &--type {
     padding-bottom: 30px;
 
@@ -123,6 +160,12 @@
   }
 
   &--email {
+    @media (max-width: 767px) {
+      &::before {
+        width: 182px;
+      }
+    }
+
     @media (min-width: 768px) {
       top: 45px;
     }
@@ -229,7 +272,8 @@
   box-sizing: border-box;
   display: block;
   width: 260px;
-  padding: 17px 0;
+  height: 52px;
+  padding: 17px 0 15px;
   margin-bottom: 22px;
   border: none;
   border-bottom: 2px solid #444444;
@@ -251,15 +295,55 @@
   &::placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     color: rgba(0, 0, 0, 0.3);
-    line-height: 24px;
   }
 
   @media (min-width: 768px) {
     width: 100%;
     margin: 0;
-    padding: 16px 0 12px 18px;
+    padding: 16px 0 18px 16px;
     font-size: 19px;
     line-height: 18px;
+  }
+}
+
+.form__field:hover + .form__icon,
+.form__field:focus + .form__icon {
+  opacity: 1;
+  fill: #62d1ba;
+}
+
+.form__icon {
+  position: absolute;
+  opacity: 0.2;
+  pointer-events: none;
+
+  &--phone {
+    bottom: 39px;
+    right: 7px;
+
+    @media (min-width: 768px) {
+      bottom: 18px;
+      right: 26px + 50px;
+    }
+
+    @media (min-width: 1150px) {
+      bottom: 17px;
+      right: 8px + 225px;
+    }
+  }
+
+  &--email {
+    bottom: 37px;
+    right: 3px;
+
+    @media (min-width: 768px) {
+      bottom: 15px + 50px;
+      right: 22px + 50px;
+    }
+
+    @media (min-width: 1150px) {
+      right: 4px + 225px;
+    }
   }
 }
 
