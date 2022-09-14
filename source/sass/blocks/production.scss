@@ -17,14 +17,13 @@
 
 .production__wrapper {
   position: relative;
-  padding: 22px 0 33px;
+  padding: 21px 0 32px;
   border: 1px solid #ececec;
 
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    padding-bottom: 46px;
+    padding: 0 0 46px;
   }
 
   @media (min-width: 1150px) {
