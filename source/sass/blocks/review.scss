@@ -64,8 +64,7 @@
 .review__title {
   font-size: 25px;
   line-height: 30px;
-  margin: 0;
-  margin-bottom: 14px;
+  margin: 0 0 14px;
 
   @media (min-width: 768px) {
     order: 1;
@@ -91,8 +90,7 @@
 }
 
 .review__item {
-  margin: 0;
-  margin-bottom: 38px;
+  margin: 0 0 38px;
 
   @media (min-width: 768px) {
     order: 3;
@@ -103,8 +101,7 @@
 }
 
 .review__text {
-  margin: 0;
-  margin-bottom: 33px;
+  margin: 0 0 33px;
   font-size: 15px;
   line-height: 30px;
   color: #444444;

@@ -19,13 +19,13 @@
     left: 50px;
     bottom: 0;
     min-height: 119px;
-    padding: 25px 36px 34px 36px;
+    padding: 25px 36px 33px 36px;
     width: 334px;
     font-size: 20px;
     line-height: 30px;
 
     &:hover {
-      padding-bottom: 39px;
+      padding-bottom: 38px;
       background-color: #59d5bc;
     }
   }
@@ -58,6 +58,10 @@
 
 .intro-button svg {
   opacity: 0.5;
+}
+
+.intro-button:hover svg {
+  opacity: 0.7;
 }
 
 .intro-button:active svg {
