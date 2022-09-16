@@ -1,4 +1,8 @@
 .video {
+  grid-row: 1 / 4;
+}
+
+.video__image {
   display: block;
   width: 260px;
   height: 150px;
