@@ -5,7 +5,7 @@ mainFormButton.classList.remove('menu-button--hide');
 menu.classList.remove('form-nav__wrapper--nojs');
 menu.classList.add('form-nav__wrapper--close');
 
-mainFormButton.onclick = function() {
+mainFormButton.onclick = function () {
   mainFormButton.classList.toggle('menu-button--close');
   menu.classList.toggle('form-nav__wrapper--close');
 }
