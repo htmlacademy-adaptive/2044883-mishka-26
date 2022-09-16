@@ -1,8 +1,9 @@
 .intro {
   box-sizing: border-box;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 73px;
+  background-color: #f9f9f9;
   background-image: url("../img/hero-mobile.png");
   background-repeat: no-repeat;
   background-size: auto 373px;
@@ -13,7 +14,6 @@
   }
 
   @media (min-width: 768px) {
-    width: 768px;
     margin-top: -45px;
     padding-top: 154px;
     background-image: url("../img/hero-desktop.png");
@@ -26,19 +26,22 @@
   }
 
   @media (min-width: 1150px) {
-    width: 1150px;
     padding-top: 157px;
   }
 }
 
 .intro__wrapper {
+  box-sizing: border-box;
   position: relative;
   align-content: space-between;
+  width: 320px;
+  margin: 0 auto;
   min-height: 489px - 73px;
 
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    width: 768px;
     min-height: 746px - 154px;
     padding: 0 50px;
 
@@ -57,6 +60,7 @@
   }
 
   @media (min-width: 1150px) {
+    width: 1150px;
     min-height: 747px - 158px;
 
     &::before {
