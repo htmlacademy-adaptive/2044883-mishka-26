@@ -9,13 +9,14 @@
 .social__list {
   display: flex;
   justify-content: center;
-  margin: 0;
-  margin-bottom: 28px;
+  flex-wrap: wrap;
+  max-width: 250px;
+  margin: 0 auto 28px;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: 768px) {
-    margin: 0;
+    margin: 0 auto;
   }
 }
 

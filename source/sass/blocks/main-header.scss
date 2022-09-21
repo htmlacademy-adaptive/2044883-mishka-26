@@ -23,7 +23,7 @@
 .main-header__logo {
   display: inline-block;
   height: 79px;
-  cursor: default;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     display: none;

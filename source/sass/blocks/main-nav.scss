@@ -41,7 +41,15 @@
 .main-nav__logo {
   order: 0;
   display: none;
-  cursor: default;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: 768px) {
     position: relative;
@@ -63,20 +71,11 @@
   @media (min-width: 1150px) {
     display: block;
     margin-top: 9px;
+    margin-left: 10px;
 
     &::after {
-      left: -107px;
+      left: -117px;
     }
-  }
-}
-
-.main-nav__logo svg {
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 

@@ -17,29 +17,6 @@
   padding: 0;
   border: none;
 
-  //&--email::after,
-  //&--phone::after {
-  //  position: absolute;
-  //  content: "";
-  //  right: 0;
-  //  background-repeat: no-repeat;
-  //  z-index: -1;
-  //}
-  //
-  //&--email::after {
-  //  width: 32px;
-  //  height: 21px;
-  //  bottom: 40px;
-  //  background-image: url("../img/mail.svg");
-  //}
-  //
-  //&--phone::after {
-  //  width: 25px;
-  //  height: 24px;
-  //  bottom: 42px;
-  //  background-image: url("../img/phone.svg");
-  //}
-
   @media (min-width: 768px) {
     width: 768px;
     position: relative;
@@ -150,12 +127,12 @@
 
   &--phone,
   &--email {
-    padding: 13px 0 4px;
+    padding: 12px 0 4px;
 
     @media (min-width: 768px) {
       position: absolute;
       padding: 0;
-      top: 69px;
+      top: 66px;
     }
   }
 
@@ -167,7 +144,7 @@
     }
 
     @media (min-width: 768px) {
-      top: 45px;
+      top: 41px;
     }
   }
 
@@ -351,10 +328,8 @@
   display: block;
   box-sizing: border-box;
   width: 260px;
-  max-width: 260px;
-  min-height: 142px;
-  max-height: 260px;
-  padding: 17px 17px 0;
+  height: 142px;
+  padding: 16px 15px 0;
   margin-bottom: 17px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -362,6 +337,7 @@
   border: 2px solid #444444;
   border-radius: 0;
   outline: none;
+  resize: none;
 
   &:hover {
     border-color: #62d1ba;
@@ -376,18 +352,15 @@
   }
 
   @media (min-width: 768px) {
-    width: 100%;
-    max-width: 501px;
-    min-height: 142px;
-    max-height: 260px;
+    width: 501px;
     margin: 0;
+    padding-top: 15px;
     font-size: 19px;
     line-height: 18px;
   }
 
   @media (min-width: 1150px) {
-    max-width: 700px;
-    margin-bottom: 0;
+    width: 700px;
   }
 }
 
@@ -413,8 +386,7 @@
 
 .form__warning {
   order: 1;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   font-size: 14px;
   line-height: 16px;
   color: #444444;
@@ -430,6 +402,8 @@
 .form__button {
   order: 2;
   width: 260px;
+  padding: 15px 0 13px;
+  font-size: 17px;
 
   @media (min-width: 768px) {
     order: 1;
