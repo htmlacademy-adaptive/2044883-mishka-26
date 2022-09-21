@@ -80,11 +80,11 @@
   background-position: center;
   background-size: cover;
 
-  @media(min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) {
     background-image: url("../img/map@2x.jpg");
   }
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 768px;
     height: 457px;
     margin-bottom: 54px;
