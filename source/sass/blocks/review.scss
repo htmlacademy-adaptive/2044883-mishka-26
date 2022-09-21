@@ -130,6 +130,16 @@
   }
 }
 
+.review__author-name {
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1150px) {
+    font-size: 17px;
+  }
+}
+
 .review__button-wrapper {
   display: flex;
 

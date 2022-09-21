@@ -1,4 +1,5 @@
 .intro {
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
@@ -15,10 +16,23 @@
 
   @media (min-width: 768px) {
     margin-top: -45px;
-    padding-top: 154px;
+    padding-top: 156px;
     background-image: url("../img/hero-desktop.png");
     background-size: 1150px auto;
     background-position: center;
+
+    &::before {
+      z-index: 1;
+      content: "";
+      position: absolute;
+      height: 24px;
+      width: 100%;
+      bottom: -12px;
+      left: 0;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: repeat;
+      background-size: 768px;
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.png");
@@ -27,6 +41,12 @@
 
   @media (min-width: 1150px) {
     padding-top: 157px;
+
+    &::before {
+      height: 34px;
+      bottom: -17px;
+      background-size: 1150px;
+    }
   }
 }
 
@@ -42,31 +62,13 @@
     display: flex;
     flex-wrap: wrap;
     width: 768px;
-    min-height: 746px - 154px;
+    min-height: 746px - 156px;
     padding: 0 50px;
-
-    &::before {
-      z-index: 1;
-      content: "";
-      position: absolute;
-      height: 24px;
-      width: 100%;
-      bottom: -12px;
-      left: 0;
-      background-image: url("../img/zigzag-fill-desktop.svg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
   }
 
   @media (min-width: 1150px) {
     width: 1150px;
     min-height: 747px - 158px;
-
-    &::before {
-      height: 34px;
-      bottom: -17px;
-    }
   }
 }
 
@@ -75,14 +77,13 @@
   font-size: 27px;
   text-align: center;
   line-height: 30px;
-  margin: 0 auto;
-  margin-bottom: 120px;
+  margin: 0 auto 120px;
 
   @media (min-width: 768px) {
     max-width: 668px;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 0;
+    margin-bottom: 200px;
   }
 
   @media (min-width: 1150px) {

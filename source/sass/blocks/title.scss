@@ -20,7 +20,7 @@
       left: 0;
       background-image: url("../img/zigzag-fill-desktop.svg");
       background-repeat: repeat;
-      background-size: 100%;
+      background-size: 768px;
     }
   }
 
@@ -29,6 +29,8 @@
 
     &::before {
       height: 34px;
+      bottom: -15px;
+      background-size: 1150px;
     }
   }
 }

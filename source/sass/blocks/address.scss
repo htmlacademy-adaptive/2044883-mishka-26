@@ -8,13 +8,14 @@
   color: #444444;
 
   @media (min-width: 768px) {
-    grid-template-columns: 81px 250px 82px 257px;
+    grid-template-columns: 78px 255px 78px 257px;
     gap: 25px 0;
     font-size: 17px;
   }
 
   @media (min-width: 1150px) {
-    grid-template-columns: 82px 249px;
+    grid-template-columns: 78px 249px;
+    gap: 27px 0;
   }
 }
 
@@ -39,6 +40,10 @@
 
   @media (min-width: 768px) {
     height: 30px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-bottom: 3px;
   }
 }
 
